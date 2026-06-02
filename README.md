@@ -98,12 +98,16 @@ If you regenerate them (e.g. after a UI change), copy the new PNGs into this rep
 
 The styles use CSS custom properties at the top of `styles.css` — change brand colours, radii, shadows, etc. in one place.
 
+Sampled directly from the Paula Figma file (Cairo 3A — Module 4).
+
 | Token                    | Default      | Notes                          |
 |--------------------------|--------------|--------------------------------|
-| `--brand-primary`        | `#2563EB`    | Paula blue                     |
-| `--brand-primary-bg`     | `#EFF6FF`    | Light tint                     |
-| `--brand-navy`           | `#1F4E78`    | Subhead colour                 |
-| `--accent-red`           | `#EF4444`    | Below-FC / alerts              |
+| `--brand-primary`        | `#2D73C9`    | Paula blue (KPIs, primary CTA) |
+| `--brand-primary-bg`     | `#E9F0F9`    | Soft blue tint                 |
+| `--brand-navy`           | `#153A6C`    | Subheads, Heavy bar            |
+| `--accent-red`           | `#E5252A`    | Run Optimization, alerts       |
+| `--accent-red-bg`        | `#FDE8E7`    | Below-FC row tint              |
+| `--status-success`       | `#01A669`    | Best row, positive deltas      |
 | `--bg-page`              | `#FAFAFB`    | Page background                |
 | `--bg-card`              | `#FFFFFF`    | Card background                |
 | `--text-primary`         | `#111827`    | Body text                      |
