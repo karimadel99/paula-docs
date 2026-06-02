@@ -29,7 +29,6 @@
       <a href="#frozen-recommendations">Frozen Recommendations</a>
       <a href="#workflow">Daily Workflow</a>
       <a href="#glossary">Glossary</a>
-      <a href="#limitations">Known Limitations</a>
     </nav>
     <div class="sidebar-footer">
       <span>Module 4 · Cairo 3A</span>
@@ -47,7 +46,6 @@
       </p>
       <ul class="pill-list">
         <li>4 pages · 5 views</li>
-        <li>Mock data — live wiring pending backend</li>
         <li>Desktop ≥ 1280 px</li>
         <li>EGP · kg · Cairo time</li>
       </ul>
@@ -77,31 +75,31 @@
         <ol class="callouts" data-page="dashboard">
           <li data-id="dash-1">
             <strong>Header &amp; controls</strong>
-            <span>Page title + current day, the Recent Runs dialog, the Production / Demand mode toggle, and the red <em>Run Optimization</em> button that triggers a fresh run.</span>
+            <span>Title, date, runs history, Production / Demand toggle, and Run Optimization.</span>
           </li>
           <li data-id="dash-2">
             <strong>Fixed Cost Alert</strong>
-            <span>Yellow banner appears when any scenario falls below the 41.4M EGP fixed-cost threshold. Tells you how many to review. Dismiss with the × on the right.</span>
+            <span>Warning when a scenario falls below the fixed-cost threshold.</span>
           </li>
           <li data-id="dash-3">
             <strong>KPI row</strong>
-            <span>Monthly Profit · Daily Birds · Avg Weight · Demand Coverage — each with a delta versus the previous run and a small trend sparkline.</span>
+            <span>Monthly Profit · Daily Birds · Avg Weight · Demand Coverage.</span>
           </li>
           <li data-id="dash-4">
             <strong>Today's cutting plan</strong>
-            <span>What the engine recommends today: dominant cutting target, strategy (All Fresh / All Frozen / Mixed), and the fresh / frozen kg split.</span>
+            <span>Recommended cut target, strategy, and fresh / frozen kg split.</span>
           </li>
           <li data-id="dash-5">
             <strong>Profit by scenario</strong>
-            <span>All 12 scenarios ranked by expected profit. The winner sits highest in blue; any below the fixed-cost line are red so they jump out.</span>
+            <span>All 12 scenarios ranked by profit. Winner in blue, below-FC in red.</span>
           </li>
           <li data-id="dash-6">
             <strong>Output splits</strong>
-            <span>Donut shows the fresh-vs-frozen share of the winning scenario. The bar on the right shows the Light-vs-Heavy bird split (1.5 kg vs 2 kg).</span>
+            <span>Fresh-vs-Frozen share (donut) and Light-vs-Heavy bird split (bar).</span>
           </li>
           <li data-id="dash-7">
             <strong>Scenario comparison</strong>
-            <span>Full ranked table — sortable, searchable, exportable as CSV. The best scenario is highlighted with a green-tinted row.</span>
+            <span>Sortable, searchable, exportable table of all scenarios.</span>
           </li>
         </ol>
       </div>
@@ -127,19 +125,19 @@
         <ol class="callouts" data-page="demand-empty">
           <li data-id="dem-e-1">
             <strong>Drop zone</strong>
-            <span>Drag &amp; drop an <code>.xlsx</code> or <code>.csv</code> (up to 10 MB), or click to browse. Download the template first to make sure your columns match (Category, Demand kg, Priority, Shortage tolerance %).</span>
+            <span>Drop an <code>.xlsx</code> or <code>.csv</code>, or download the template first.</span>
           </li>
           <li data-id="dem-e-2">
             <strong>Demand Preview</strong>
-            <span>Empty until you upload. After upload, the first 10 categories appear here with priority badges and the % change versus your historical demand.</span>
+            <span>Populates with your categories after upload.</span>
           </li>
           <li data-id="dem-e-3">
             <strong>Shortage Tolerance</strong>
-            <span>How much shortage you'll accept per category in exchange for better overall profit (default 10%). Higher = engine has more freedom to skip low-margin categories.</span>
+            <span>How much shortage you'll accept per category (default 10%).</span>
           </li>
           <li data-id="dem-e-4">
             <strong>Comparison area</strong>
-            <span>Once you upload, this card shows side-by-side <em>Production (Before)</em> vs <em>Demand (After)</em> so you can compare before committing.</span>
+            <span>Production vs Demand side-by-side appears after upload.</span>
           </li>
         </ol>
       </div>
@@ -158,27 +156,27 @@
         <ol class="callouts" data-page="demand-uploaded">
           <li data-id="dem-u-1">
             <strong>Uploaded file</strong>
-            <span>The accepted file with name, size, category count, and timestamp. Click the trash icon on the right to remove it and revert to Production mode.</span>
+            <span>Name, size, category count. Trash icon removes it.</span>
           </li>
           <li data-id="dem-u-2">
             <strong>Shortage Tolerance</strong>
-            <span>Slide between 0% (strict — must cover all demand) and 100% (anything goes). 10% is the default. The comparison updates live as you adjust.</span>
+            <span>0% strict to 100% loose. Default 10%.</span>
           </li>
           <li data-id="dem-u-3">
             <strong>Demand Preview</strong>
-            <span>First 10 categories from your file: requested kg, priority badge (High / Med / Low), and the % change vs your historical demand average. Green = above history, red = below.</span>
+            <span>Top categories with priority badges and vs-history deltas.</span>
           </li>
           <li data-id="dem-u-4">
             <strong>Production (Before)</strong>
-            <span>The current Production-mode plan for context: 120.8M EGP, Mixed strategy, 45,000 kg fresh + 12,000 kg frozen, 30K Light + 10K Heavy.</span>
+            <span>The current Production-mode plan, for comparison.</span>
           </li>
           <li data-id="dem-u-5">
             <strong>Demand (After)</strong>
-            <span>The re-optimised plan based on your upload: 156.8M EGP, All Fresh, +5M vs Before, 98.1% demand coverage. The green delta confirms it's an improvement.</span>
+            <span>The re-optimised plan from your upload.</span>
           </li>
           <li data-id="dem-u-6">
             <strong>Apply or keep</strong>
-            <span>Two actions: <em>Keep current plan</em> (dark) dismisses the upload and stays in Production mode; <em>Apply new Plan</em> (blue) commits the Demand-driven plan — the Dashboard and SKU pages then reflect it.</span>
+            <span>Commit the new plan, or dismiss the upload.</span>
           </li>
         </ol>
       </div>
@@ -205,31 +203,31 @@
         <ol class="callouts" data-page="sku-allocation">
           <li data-id="sku-1">
             <strong>Mode toggle</strong>
-            <span><em>Demand-based</em> sorts the table by Coverage ascending so shortfalls float to the top. <em>Profit-based</em> sorts by Margin descending so you can spot low-contribution rows to cut.</span>
+            <span>Demand-based sorts by Coverage. Profit-based sorts by Margin.</span>
           </li>
           <li data-id="sku-2">
             <strong>KPI row</strong>
-            <span>Total SKUs · Overall coverage % · Total allocated kg · Shortage kg. Shortage falls to zero only when coverage hits 100%.</span>
+            <span>Total SKUs, overall coverage, total allocated kg, shortage kg.</span>
           </li>
           <li data-id="sku-3">
             <strong>Packaging Mix</strong>
-            <span>Donut showing how the kilograms split across the three pack sizes — 900 g tray, 1.2 kg bulk, 1.5 kg premium.</span>
+            <span>Donut of the 900 g / 1.2 kg / 1.5 kg pack-size split.</span>
           </li>
           <li data-id="sku-4">
             <strong>Coverage by category</strong>
-            <span>Horizontal bars per category. Red bars mark categories below their target coverage so they jump out.</span>
+            <span>Horizontal bars per category. Red = below target.</span>
           </li>
           <li data-id="sku-5">
             <strong>Demand vs Allocated</strong>
-            <span>Per-SKU bar comparison for the worst-performing SKUs — what was asked vs what's planned. Helps zero in on shortfalls.</span>
+            <span>Worst-performing SKUs at a glance.</span>
           </li>
           <li data-id="sku-6">
             <strong>Category tabs</strong>
-            <span>Filter the table to one category at a time (Fresh Breast, Fresh Thigh, …). The strip scrolls horizontally if there are many tabs.</span>
+            <span>Filter the table to one category.</span>
           </li>
           <li data-id="sku-7">
             <strong>SKU table</strong>
-            <span>Per-SKU detail: item code, packaging, demand kg, allocated kg, coverage progress bar, margin %. Searchable above and exportable to CSV via <em>Export List</em>.</span>
+            <span>Per-SKU detail. Searchable and exportable.</span>
           </li>
         </ol>
       </div>
@@ -254,23 +252,23 @@
         <ol class="callouts" data-page="frozen">
           <li data-id="frz-1">
             <strong>Hold / Sell legend</strong>
-            <span>Colour key for the timeline below: grey segments mean <em>hold</em> in cold storage; blue segments are recommended <em>sell windows</em>.</span>
+            <span>Grey = hold in cold storage. Blue = sell window.</span>
           </li>
           <li data-id="frz-2">
             <strong>KPI row</strong>
-            <span>Total frozen stock kg · Accumulated carry cost EGP · count of active Sell Windows · Expected recovery EGP (with a delta vs baseline that goes red when the outlook drops).</span>
+            <span>Total stock, accumulated carry cost, active sell windows, expected recovery.</span>
           </li>
           <li data-id="frz-3">
             <strong>Month selector</strong>
-            <span>Disabled in this release — activates once the backend reports per-month frozen data. Hovering it shows a small note explaining why.</span>
+            <span>Filter by month.</span>
           </li>
           <li data-id="frz-4">
             <strong>Sell window timeline</strong>
-            <span>One row per frozen category, four weekly slots (Week 1 – Week 4). Blue bars are sell weeks; adjacent sells are merged into a single bar so multi-week windows read as one block. Hover any bar (or Tab to it) for the exact date range and stock detail.</span>
+            <span>Per-category weekly hold / sell plan. Hover any bar for date and stock detail.</span>
           </li>
           <li data-id="frz-5">
             <strong>Storage cost accumulation</strong>
-            <span>Area chart of weekly carry-cost growth if you do nothing. Y-axis auto-scales to real data when the backend reports larger numbers.</span>
+            <span>Weekly carry-cost growth if stock isn't sold.</span>
           </li>
         </ol>
       </div>
@@ -322,21 +320,6 @@
       </dl>
     </section>
 
-    <!-- ====== LIMITATIONS ====== -->
-    <section id="limitations" class="content-section fade-in">
-      <div class="page-header">
-        <span class="kicker">v1 caveats</span>
-        <h2>Known behaviours &amp; limitations</h2>
-        <p class="lede">A few things to know about this first release.</p>
-      </div>
-      <ul class="bulleted">
-        <li><strong>Mock data</strong> — the figures shown are sample data wired into the front end to validate the screens. They'll be replaced with live results from the optimization engine once the backend service is connected.</li>
-        <li><strong>Frozen month selector</strong> — the month dropdown on the Frozen Recommendations page is intentionally disabled. It activates once the backend reports per-month frozen data.</li>
-        <li><strong>Dashboard month button</strong> — the "October" button at the top right of the Dashboard is a placeholder for the upcoming month filter; it becomes functional with backend support.</li>
-        <li><strong>No login</strong> — there's no authentication in this version. Anyone with the URL can use the app.</li>
-        <li><strong>Light mode only</strong> — no dark theme yet.</li>
-      </ul>
-    </section>
   </main>
 
   <button class="lightbox-close" aria-label="Close zoom" hidden>✕</button>
